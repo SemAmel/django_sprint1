@@ -50,7 +50,7 @@ def index(request):
     title = 'Лента записей'
     context = {
         'title': title,
-        'posts': posts,
+        'posts': posts[::-1],
     }
     return render(request, template_name, context)
 
