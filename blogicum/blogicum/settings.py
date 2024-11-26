@@ -15,11 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Дополнительные директории, где собраны статические файлы проекта.
-STATICFILES_DIRS = [
-    BASE_DIR / 'static_dev',
-]
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -58,6 +53,11 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'blogicum.urls'
 
 TEMPLATES_DIR = BASE_DIR / 'templates'
+
+# Дополнительные директории, где собраны статические файлы проекта.
+STATICFILES_DIRS = [
+    BASE_DIR / 'static_dev',
+]
 
 TEMPLATES = [
     {
